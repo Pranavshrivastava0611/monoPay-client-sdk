@@ -1,0 +1,63 @@
+{
+  "name": "monopay-client-sdk",
+  "version": "1.0.0",
+  "description": "MonoPay Client SDK — Solana-based pay-per-request middleware with automatic Phantom payment and fetch interception.",
+  "type": "module",
+
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "publishConfig": {
+  "access": "public"
+},
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "types": "./src/index.d.ts"
+    }
+  },
+
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+
+  "scripts": {
+    "test": "node test.js"
+  },
+
+  "keywords": [
+    "solana",
+    "payment",
+    "web3",
+    "phantom",
+    "middleware",
+    "fetch-interceptor",
+    "sdk",
+    "paywall"
+  ],
+
+  "author": "Pranav Shrivastava",
+  "license": "MIT",
+
+  "peerDependencies": {
+    "@solana/web3.js": ">=1.70.0",
+    "bs58": ">=5.0.0"
+  },
+
+  "peerDependenciesMeta": {
+    "@solana/web3.js": { "optional": false },
+    "bs58": { "optional": false }
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pranavshrivastava0611/monoPay-client-sdk.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/Pranavshrivastava0611/monoPay-client-sdk/issues"
+  },
+
+  "homepage": "https://github.com/Pranavshrivastava0611/monoPay-client-sdk#readme"
+}
